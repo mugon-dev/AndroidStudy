@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:layout_margin="10dp"
+            android:id="@+id/rbDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강아지"
+            />
+
+        <RadioButton
+            android:layout_margin="10dp"
+            android:id="@+id/rbCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고양이" />
+
+        <RadioButton
+            android:layout_margin="10dp"
+            android:id="@+id/rbRabbit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토끼" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dog" />
+
+        <ImageView
+            android:id="@+id/ivCat"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cat" />
+
+        <ImageView
+            android:id="@+id/ivRabbit"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/rabbit" />
+    </FrameLayout>
+</LinearLayout>
