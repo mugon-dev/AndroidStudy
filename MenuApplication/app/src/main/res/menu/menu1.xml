@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemRed"
+        android:title="배경(빨강)"/>
+    <item
+        android:id="@+id/itemGreen"
+        android:title="배경(초록)"/>
+    <item
+        android:id="@+id/itemBlue"
+        android:title="배경(파랑)"/>
+    <item
+        android:title="버튼 배경">
+        <menu>
+            <item
+                android:id="@+id/subRotate"
+                android:title="45도 회원"/>
+            <item
+                android:id="@+id/subSizeE"
+                android:title="버튼 2배 확대"/>
+            <item
+            android:id="@+id/subSizeC"
+            android:title="버튼 2배 축소"/>
+        </menu>
+    </item>
+</menu>
