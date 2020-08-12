@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.webviewapplication">
+<!--    이 앱에서 외부 인터넷 사용 권한 허용-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/web"
         android:label="웹브라우저"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:logo="@drawable/web"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" android:label="웹브라우저 실습">
