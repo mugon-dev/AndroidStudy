@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemContextRed"
+        android:title="배경(빨강)"/>
+    <item
+        android:id="@+id/itemContextGreen"
+        android:title="배경(초록)"/>
+    <item
+        android:id="@+id/itemContextBlue"
+        android:title="배경(파랑)"/>
+</menu>
