@@ -29,14 +29,17 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
         //지금 현재 액티비티가 가지고 있는 데뉴인플레터 가져오기
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu1,menu);
+//        MenuInflater menuInflater = getMenuInflater();
+//        menuInflater.inflate(R.menu.menu1,menu);
+        menu.add(0,1,0,"배경색(빨강)");
+        menu.add(0,2,0,"배경색(초록)");
+        menu.add(0,3,0,"배경색(파랑)");
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+       /* switch (item.getItemId()){
             case R.id.itemRed:
                 linearLayout.setBackgroundColor(Color.RED);
                 break;
@@ -63,7 +66,18 @@ public class MainActivity extends AppCompatActivity {
                 button.setScaleX(scale);
                 button.setScaleY(scale);
                 break;
-        }
+        }*/
+       switch (item.getItemId()){
+           case 1:
+               linearLayout.setBackgroundColor(Color.RED);
+               break;
+           case 2:
+               linearLayout.setBackgroundColor(Color.GREEN);
+               break;
+           case 3:
+               linearLayout.setBackgroundColor(Color.BLUE);
+               break;
+       }
         //메뉴선택이 안되었을때
         return true;
     }
