@@ -11,6 +11,7 @@ import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -34,7 +35,20 @@ public class MainActivity extends AppCompatActivity {
                 selectYear = i;
                 selectMonth = i1+1;
                 selectDay = i2;
+                ed.setText("");
+                button.setText("저장");
                 filename="diary_"+selectYear+"_"+selectMonth+"_"+selectDay+".txt";
+                byte[] txt = new byte[100];
+                try{
+                    FileInputStream is = openFileInput(filename);
+                    is.read(txt);
+                    String str = new String(txt);
+                    ed.setText(str);
+                    button.setText("수정");
+                    is.close();
+                }catch (IOException e){
+
+                }
             }
         });
         button.setOnClickListener(new View.OnClickListener() {
