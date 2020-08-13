@@ -14,11 +14,12 @@ import android.widget.Toast;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
     EditText ed;
-    Button button;
+    Button button, button2;
     int selectYear, selectMonth, selectDay;
     String filename;
     @Override
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         calendarView=findViewById(R.id.calendarView);
         ed=findViewById(R.id.editDiary);
         button=findViewById(R.id.button);
+        button2=findViewById(R.id.button2);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -62,6 +64,23 @@ public class MainActivity extends AppCompatActivity {
                     ed.setText("");
                     Toast.makeText(MainActivity.this,"저장되었습니다.",Toast.LENGTH_SHORT).show();
                 }catch (IOException ex){
+
+                }
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    //raw 폴더에서 불러오기
+                    InputStream is = getResources().openRawResource(R.raw.test01);
+                    //파일 크기만큼 크기지정
+                    byte[] txt=new byte[is.available()];
+                    is.read(txt);
+                    ed.setText(new String(txt));
+                    is.close();
+                }catch (Exception e){
 
                 }
             }
