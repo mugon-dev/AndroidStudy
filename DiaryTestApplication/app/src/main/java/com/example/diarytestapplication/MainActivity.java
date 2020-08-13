@@ -2,7 +2,9 @@ package com.example.diarytestapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +21,7 @@ import java.io.InputStream;
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
     EditText ed;
-    Button button, button2;
+    Button button, button2, button3;
     int selectYear, selectMonth, selectDay;
     String filename;
     @Override
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         ed=findViewById(R.id.editDiary);
         button=findViewById(R.id.button);
         button2=findViewById(R.id.button2);
+        button3=findViewById(R.id.button3);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -81,6 +84,23 @@ public class MainActivity extends AppCompatActivity {
                     ed.setText(new String(txt));
                     is.close();
                 }catch (Exception e){
+
+                }
+            }
+        });
+        //sd카드에서 읽어오기
+        ActivityCompat.requestPermissions(this,new String[]{
+                Manifest.permission.WRITE_EXTERNAL_STORAGE},MODE_PRIVATE);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    FileInputStream is = new FileInputStream("/sdcard/myDir/test01.txt");
+                    byte[] txt = new byte[is.available()];
+                    is.read(txt);
+                    ed.setText(new String(txt));
+                    is.close();
+                }catch (IOException e){
 
                 }
             }
