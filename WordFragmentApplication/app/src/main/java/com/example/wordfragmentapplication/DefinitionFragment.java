@@ -73,9 +73,9 @@ public class DefinitionFragment extends Fragment {
     public void onStart() {
         super.onStart();
         //화면에 보일때 argument를 받도록
-        Bundle agrs = getArguments();
+        Bundle agrs = getArguments(); //메인에서 argument 얻어오기
         if(agrs!=null){ //전달된 데이터가 있을때
-            updateDefinitionView(agrs.getInt(ARG_POSITION));
+            updateDefinitionView(agrs.getInt(ARG_POSITION)); //position 이라는 이름의 값 가져오기
         }else if(mCurrentPostion != -1){//포지션을 받았을때
             updateDefinitionView(mCurrentPostion);
         }
@@ -83,12 +83,12 @@ public class DefinitionFragment extends Fragment {
     public void updateDefinitionView(int position){
         TextView defTv = getActivity().findViewById(R.id.definition);
         defTv.setText(Data.definitions[position]);
-        mCurrentPostion=position;
+        mCurrentPostion=position; //한번 이상 실행했을때 postion을 저장
     }
 
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt(ARG_POSITION,mCurrentPostion);
+        super.onSaveInstanceState(outState); //실행한 결과 저장
+        outState.putInt(ARG_POSITION,mCurrentPostion); //postion이라는 이름으로 mCurrentpostion에 저장
     }
 }

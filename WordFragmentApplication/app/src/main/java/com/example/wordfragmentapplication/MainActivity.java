@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements WordFragment.OnWo
         }else{
             DefinitionFragment newFragment=new DefinitionFragment();
             Bundle args=new Bundle();
-            args.putInt(DefinitionFragment.ARG_POSITION/*=="position"*/,position);
+            args.putInt(DefinitionFragment.ARG_POSITION/*=="position"*/,position); //position 이라는 이름으로 argument 값으로 position 전달
             newFragment.setArguments(args);
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.add(R.id.definition_container,newFragment);
