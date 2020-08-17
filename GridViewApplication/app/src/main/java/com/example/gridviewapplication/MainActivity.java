@@ -1,9 +1,12 @@
 package com.example.gridviewapplication;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     GridView gv;
     MyGridAdapter myGridAdapter = null;
     View dialogView;
+    Detail detail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,11 +76,18 @@ public class MainActivity extends AppCompatActivity {
                     dlg.setTitle("큰포스트");
                     dlg.setIcon(R.mipmap.ic_launcher);
                     dlg.setView(dialogView);
-                    dlg.setPositiveButton("닫기",null);
+                    dlg.setNegativeButton("닫기",null);
+                    dlg.setPositiveButton("상세보기", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+                            intent.putExtra("detail",detail);
+                            startActivity(intent);
+                        }
+                    });
                     dlg.show();
                 }
             });
-
             return iv;
         }
     }
