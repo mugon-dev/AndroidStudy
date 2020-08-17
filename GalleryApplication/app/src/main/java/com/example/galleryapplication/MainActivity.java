@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         gallery = findViewById(R.id.gallery1);
         MyGalleryAdapter galAdapter = new MyGalleryAdapter();
+        gallery.setAdapter(galAdapter);
 
     }
 
