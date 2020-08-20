@@ -14,7 +14,9 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     EditText et;
     Button btn;
-    MainHandler handler;
+    /*MainHandler handler;*/
+    Handler handler = new Handler();
+    int value = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         et = findViewById(R.id.edit1);
         btn = findViewById(R.id.button);
-        handler = new MainHandler();
+        /*handler = new MainHandler();*/
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +36,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     class BackgroundThread extends Thread {
+        @Override
+        public void run() {
+            for (int i = 0; i < 100; i++) {
+                try {
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                }
+                value += 1;
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        et.setText("value: " + value);
+                    }
+                });
+            }
+        }
+    }
+}
+
+    /*class BackgroundThread extends Thread {
         @Override
         public void run() {
             int value = 0;
@@ -57,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
                 handler.sendMessage(msg);
             }
         }
-    }
+    }*/
 
-    class MainHandler extends Handler {
+   /* class MainHandler extends Handler {
         @Override
         public void handleMessage(@NonNull Message msg) {
             super.handleMessage(msg);
@@ -68,4 +90,4 @@ public class MainActivity extends AppCompatActivity {
             et.setText("value: " + value);
         }
     }
-}
+}*/
