@@ -1,5 +1,6 @@
 package com.example.moviedbapplication;
 
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,20 +11,24 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHoler> {
-    ArrayList<Movie> items = new ArrayList<>();
+public class MovieAdapter extends
+        RecyclerView.Adapter<MovieAdapter.ViewHolder>
+        implements OnMovieItemClickListener{
+
+    ArrayList<Movie> items=new ArrayList<Movie>(); //수정
+    OnMovieItemClickListener listener;
 
     @NonNull
     @Override
-    public ViewHoler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View itemView = inflater.inflate(R.layout.movie_item, parent, false);
-        return new ViewHoler(itemView);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater=LayoutInflater.from(parent.getContext());
+        View itemView=inflater.inflate(R.layout.movie_item,parent,false);
+        return new ViewHolder(itemView,this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHoler holder, int position) {
-        Movie item = items.get(position);
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Movie item=items.get(position);
         holder.setItem(item);
     }
 
@@ -32,34 +37,57 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHoler> {
         return items.size();
     }
 
-    public void addItem(Movie item) {
+    public void addItem(Movie item){
         items.add(item);
     }
-
-    public void setItems(ArrayList<Movie> items) {
-        this.items = items;
+    public void setItems(ArrayList<Movie> items){
+        this.items=items;
     }
-
-    public Movie getItem(int position) {
+    public Movie getItem(int position){
         return items.get(position);
     }
 
-    //제일 먼저 생성
-    static class ViewHoler extends RecyclerView.ViewHolder {
+
+
+    public void setOnItemClickListener(OnMovieItemClickListener listener){
+        this.listener=listener;
+    }
+
+    @Override
+    public void OnItemClick(MovieAdapter.ViewHolder holder, View view, int position) {
+        if(listener!=null){
+            listener.OnItemClick(holder,view,position);
+        }
+    }
+
+    static class ViewHolder extends RecyclerView.ViewHolder{
         TextView tvItemTitle;
         TextView tvItemPoint;
 
-        public ViewHoler(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView, final OnMovieItemClickListener listener) {
             super(itemView);
-            tvItemTitle = itemView.findViewById(R.id.tvItemTitle);
-            tvItemPoint = itemView.findViewById(R.id.tvItemPoint);
+            tvItemTitle=itemView.findViewById(R.id.tvItemTitle);
+            tvItemPoint=itemView.findViewById(R.id.tvItemPoint);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position=getAdapterPosition();
+
+                    if(listener !=null){
+                        listener.OnItemClick(ViewHolder.this,view,position);
+                    }
+                }
+            });
         }
 
-        public void setItem(Movie movie) {
-            double avg = movie.getPoint() / movie.getCount();
+        public void setItem(Movie movie){
+            double avg=0;
+            if(movie.getCount()>0){
+                avg=movie.getPoint()/movie.getCount();
+            }
             tvItemTitle.setText(movie.getTitle());
-            tvItemPoint.setText("평점: "+avg + " 점");
-
+            tvItemPoint.setText("평점:"+avg+"점");
         }
     }
 }

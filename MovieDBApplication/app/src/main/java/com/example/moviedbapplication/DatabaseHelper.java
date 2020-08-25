@@ -25,8 +25,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 +"year int,"
                 +"actor text,"
                 +"content text,"
-                +"point double,"
-                +"count integer)";
+                +"point double default 0.0,"
+                +"count integer default 0)";
         sqLiteDatabase.execSQL(sql);
 
     }

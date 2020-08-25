@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnInput=findViewById(R.id.btnInput);
-        btnMovieList=findViewById(R.id.btnMovieList);
+        btnMovieList=findViewById(R.id.btnList);
         btnInput.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
