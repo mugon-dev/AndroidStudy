@@ -61,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
             paint.setColorFilter(new ColorMatrixColorFilter(cm));
             canvas.drawBitmap(pic,picX,picY,paint);
             pic.recycle();
-
-
         }
     }
 }

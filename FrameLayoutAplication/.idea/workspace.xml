@@ -5,8 +5,55 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a3e7a54-c836-44b8-876e-fd13220ae667" name="Default Changelist" comment="" />
+    <list default="true" id="6a3e7a54-c836-44b8-876e-fd13220ae667" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ActivityTestApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ActivityTestApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ActivityTestApplication/app/src/main/java/com/example/activitytestapplication/MainActivity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ActivityTestApplication/app/src/main/java/com/example/activitytestapplication/MainActivity2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ActivityTestApplication/app/src/main/java/com/example/activitytestapplication/SecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ActivityTestApplication/app/src/main/java/com/example/activitytestapplication/SecondActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterViewApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterViewApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AdapterViewApplication/app/src/main/java/com/example/adapterviewapplication/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AdapterViewApplication/app/src/main/java/com/example/adapterviewapplication/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation2Application/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation2Application/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animation2Application/app/src/main/java/com/example/animation2application/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Animation2Application/app/src/main/java/com/example/animation2application/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AnimationApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnimationApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsyncTest02Application/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AsyncTest02Application/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsyncTest02Application/app/src/main/java/com/example/asynctest02application/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AsyncTest02Application/app/src/main/java/com/example/asynctest02application/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsyncTestApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AsyncTestApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsyncTestApplication/app/src/main/java/com/example/asynctestapplication/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AsyncTestApplication/app/src/main/java/com/example/asynctestapplication/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoCompleteApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoCompleteApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoCompleteApplication/app/src/main/java/com/example/autocompleteapplication/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoCompleteApplication/app/src/main/java/com/example/autocompleteapplication/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BroadCastReceiverApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BroadCastReceiverApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BroadCastReceiverApplication/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BroadCastReceiverApplication/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BroadCastReceiverApplication/app/src/main/java/com/example/broadcastreceiverapplication/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BroadCastReceiverApplication/app/src/main/java/com/example/broadcastreceiverapplication/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BroadCastReceiverApplication/app/src/main/java/com/example/broadcastreceiverapplication/SmsReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BroadCastReceiverApplication/app/src/main/java/com/example/broadcastreceiverapplication/SmsReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardViewApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CardViewApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardViewApplication/app/src/main/java/com/example/cardviewapplication/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CardViewApplication/app/src/main/java/com/example/cardviewapplication/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CardViewApplication/app/src/main/java/com/example/cardviewapplication/PersonAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CardViewApplication/app/src/main/java/com/example/cardviewapplication/PersonAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database01Application/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Database01Application/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Database01Application/app/src/main/java/com/example/database01application/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Database01Application/app/src/main/java/com/example/database01application/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dlg2Application/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Dlg2Application/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DlgApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DlgApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DlgExApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DlgExApplication/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FileTest01Application/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FileTest01Application/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FragmentApplication/app/src/main/java/com/example/fragmentapplication/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentApplication/app/src/main/java/com/example/fragmentapplication/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +73,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1ftEn4NYFupQuHBEpgg0DX76fRS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,8 +88,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -122,6 +169,11 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1283" y="410" key="Github.ShareDialog" timestamp="1597031273982">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -131,9 +183,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1195" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597031278791" />
+    <state width="1860" height="236" key="GridCell.Tab.0.bottom" timestamp="1598693317142">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="236" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598693317142" />
+    <state width="1860" height="236" key="GridCell.Tab.0.center" timestamp="1598693317142">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="236" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598693317142" />
+    <state width="1860" height="236" key="GridCell.Tab.0.left" timestamp="1598693317141">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="236" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598693317141" />
+    <state width="1860" height="236" key="GridCell.Tab.0.right" timestamp="1598693317142">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="236" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598693317142" />
+    <state x="-1459" y="162" key="SettingsEditor" timestamp="1598692657545">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1459" y="162" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598692657545" />
     <state x="754" y="297" key="chooseDestDirectoryDialog" timestamp="1597029546704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597029546704" />
+    <state x="-1820" y="100" width="1720" height="840" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1598687298865">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1820" y="100" width="1720" height="840" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598687298865" />
+    <state x="-1268" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1598692675350">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1268" y="344" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598692675350" />
   </component>
 </project>

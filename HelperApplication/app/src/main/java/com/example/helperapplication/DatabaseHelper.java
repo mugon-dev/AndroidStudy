@@ -13,7 +13,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public DatabaseHelper(@Nullable Context context) {
         super(context, NAME, null, VERSION);
     }
-
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         printLog("onCreate() 호출");
@@ -24,17 +23,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 +"mobile text)";
         sqLiteDatabase.execSQL(sql);
     }
-
     private void printLog(String data) {
         Log.d("DatabaseHelper",data);
     }
-
     @Override
     public void onOpen(SQLiteDatabase db) {
         super.onOpen(db);
         printLog("onOpen() 호출");
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
         printLog("onUpgrade() 호출"+oldVersion+"->"+newVersion);
@@ -42,6 +38,5 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (newVersion>1){/*새로 바뀔때*/
             sqLiteDatabase.execSQL("drop table if exists emp");
         }
-
     }
 }

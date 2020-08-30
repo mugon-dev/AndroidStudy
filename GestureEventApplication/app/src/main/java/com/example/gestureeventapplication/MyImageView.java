@@ -11,7 +11,6 @@ public class MyImageView extends View {
     private Drawable image;
     private ScaleGestureDetector gestureDetector;
     private float scale=1.0f;
-
     public MyImageView(Context context) {
         super(context);
         image=context.getResources().getDrawable(R.drawable.cat);
@@ -19,7 +18,6 @@ public class MyImageView extends View {
         image.setBounds(0,0,image.getIntrinsicWidth(),image.getIntrinsicHeight());
         gestureDetector = new ScaleGestureDetector(context, new ScaleListener());
     }
-
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -28,14 +26,12 @@ public class MyImageView extends View {
         image.draw(canvas);
         canvas.restore();
     }
-
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         gestureDetector.onTouchEvent(event);
         invalidate();
         return true;
     }
-
     private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener{
         @Override
         public boolean onScale(ScaleGestureDetector detector) {
@@ -46,7 +42,6 @@ public class MyImageView extends View {
                 scale=10.0f;
             invalidate();
             return true;
-
         }
     }
 }

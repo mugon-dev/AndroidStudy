@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         //context 메뉴 등록
         registerForContextMenu(button);
         registerForContextMenu(linearLayout);
+
     }
 
     @Override

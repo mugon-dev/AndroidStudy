@@ -48,7 +48,6 @@ public class SmsReceiver extends BroadcastReceiver {
         }
         return messages;
     }
-
     private void sendToActivity(Context context, String sender, String contents, Date receivedDate) {
         Intent myIntent=new Intent(context,SmsActivity.class);
         myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|

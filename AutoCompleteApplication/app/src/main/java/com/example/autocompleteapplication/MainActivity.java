@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_dropdown_item_1line,items);
         autoTv.setAdapter(adapter);
-
+        //콤마로 구분
         MultiAutoCompleteTextView.CommaTokenizer token = new MultiAutoCompleteTextView.CommaTokenizer();
         mulAutoTv.setTokenizer(token);
         mulAutoTv.setAdapter(adapter);

@@ -23,10 +23,12 @@ public class MainActivity2 extends AppCompatActivity {
         btnSeconde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //액티비티 불러오기
+                //버튼 클릭시 불러울 액티비티 클래스를 현재 액티비티의 intent객체에 저장
                 Intent intent = new Intent(getApplicationContext(),SecondActivity.class);
+                //intent에 값,데이터 쌍으로 저장
                 intent.putExtra("name",edName.getText().toString());
                 intent.putExtra("age",edAge.getText().toString());
+                //intent에 저장한 액티비티 실행
                 startActivity(intent);
             }
         });

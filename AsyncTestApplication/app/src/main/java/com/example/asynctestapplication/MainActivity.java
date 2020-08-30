@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 task.cancel(true);
             }
         });
-
     }
     class BackgroundTask extends AsyncTask<Integer/*처음 넘어가는 데이터*/,Integer/*작업할때 넘어가는 데이터*/,Integer/*리턴값*/>{
         @Override
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
             value = 0;
             progressBar.setProgress(value);
         }
-
         //백그라운드 작업
         @Override
         protected Integer doInBackground(Integer... integers) {
@@ -61,17 +59,14 @@ public class MainActivity extends AppCompatActivity {
             }
             return value;
         }
-
         @Override
         protected void onProgressUpdate(Integer... values) {
             progressBar.setProgress(values[0].intValue());
         }
-
         @Override
         protected void onPostExecute(Integer integer) {
             progressBar.setProgress(0);
         }
-
         @Override
         protected void onCancelled() {
             progressBar.setProgress(0);

@@ -35,15 +35,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     class BackGroundTask extends AsyncTask<Integer,Integer,Integer>{
-
         @Override
         protected void onPreExecute() {
             value = 0;
             tv.setText("value: "+value);
         }
-
         @Override
         protected Integer doInBackground(Integer... integers) {
             while(isCancelled()==false){
@@ -58,17 +55,14 @@ public class MainActivity extends AppCompatActivity {
             }
             return value;
         }
-
         @Override
         protected void onProgressUpdate(Integer... values) {
             tv.setText("value:"+ values[0]);
         }
-
         @Override
         protected void onPostExecute(Integer integer) {
             tv.setText("value:"+ integer);
         }
-
         @Override
         protected void onCancelled() {
             tv.setText("value:"+0);

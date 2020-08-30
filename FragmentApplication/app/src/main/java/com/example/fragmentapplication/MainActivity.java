@@ -21,15 +21,14 @@ public class MainActivity extends AppCompatActivity {
                 //화면이 정상적으로 실행되는 상태 == 이미 프래그먼트가 들어있음
                 return;
             }
-//            AFragment fragment = new AFragment();
-//            //컨테이너에 프래그먼트 넣기기
-//           getSupportFragmentManager().beginTransaction().add(R.id.container,fragment).commit();
-            BFragment fragment = new BFragment();
-            FragmentManager fm = getSupportFragmentManager();
-            FragmentTransaction ft = fm.beginTransaction();
-            ft.add(R.id.container,fragment);
-            ft.commit();
-
+            AFragment fragment = new AFragment();
+            //컨테이너에 프래그먼트 넣기기
+           getSupportFragmentManager().beginTransaction().add(R.id.container,fragment).commit();
+//            BFragment fragment = new BFragment();
+//            FragmentManager fm = getSupportFragmentManager();
+//            FragmentTransaction ft = fm.beginTransaction();
+//            ft.add(R.id.container,fragment);
+//            ft.commit();
         }
     }
     public void selectFragment(View v){

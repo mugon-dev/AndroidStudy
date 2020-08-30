@@ -55,18 +55,18 @@ public class MainActivity extends AppCompatActivity {
                 selectData();
             }
         });
-        btnUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                updateData();
-            }
-        });
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                deleteData();
-            }
-        });
+//        btnUpdate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                updateData();
+//            }
+//        });
+//        btnDelete.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                deleteData();
+//            }
+//        });
     }
     private void selectData(){
         println("selectData() 호출");

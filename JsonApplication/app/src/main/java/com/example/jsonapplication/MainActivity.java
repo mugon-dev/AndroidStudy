@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
             requestQueue= Volley.newRequestQueue(getApplicationContext());
         }
     }
-
     private void makeRequest() {
         String url = ed.getText().toString();
         StringRequest request = new StringRequest(

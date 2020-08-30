@@ -17,11 +17,11 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         //intent 값 받기
         Intent intent = getIntent();
+        //객체 생성해서 받아온 값 찾아서 넣기
         String name = intent.getStringExtra("name");
         String age = intent.getStringExtra("age");
         btnFinish=findViewById(R.id.btnFinish);
         tvResult=findViewById(R.id.tvResult);
-
         tvResult.setText(name+", "+age);
         btnFinish.setOnClickListener(new View.OnClickListener() {
             @Override

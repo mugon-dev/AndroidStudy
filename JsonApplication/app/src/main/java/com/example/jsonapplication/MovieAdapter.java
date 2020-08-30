@@ -30,7 +30,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         holder.setItem(item);
 
     }
-
     @Override
     public int getItemCount() {
         return items.size();

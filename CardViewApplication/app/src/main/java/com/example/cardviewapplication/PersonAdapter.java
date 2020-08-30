@@ -24,18 +24,15 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
         View itemView = inflater.inflate(R.layout.pseron_item,parent,false);
         return new ViewHolder(itemView);
     }
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Person item = items.get(position);
         holder.setItem(item); //item 값을 바인딩
     }
-
     @Override
     public int getItemCount() {
         return items.size();
     }
-
     public  void addItem(Person item){
         items.add(item);
     }
@@ -48,7 +45,6 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
     public void setItem(){
 
     }
-
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvName, tvPhone;
 
@@ -61,6 +57,5 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
             tvName.setText(item.getName());
             tvPhone.setText(item.getMobile());
         }
-
     }
 }
